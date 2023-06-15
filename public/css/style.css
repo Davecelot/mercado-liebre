@@ -111,3 +111,8 @@ section {
     padding: 16px;
     border-radius: 4px;
 }
+
+.search-bar {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
