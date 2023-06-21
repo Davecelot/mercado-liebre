@@ -116,6 +116,11 @@ h3 {
     margin-bottom: 10px;
 }
 
+.producto img {
+    height: 300px;
+    width: 300px;
+}
+
 .texto-descripcion {
     display: none;
 }
@@ -123,10 +128,18 @@ h3 {
 .precios {
     font-size: 1.rem;
     margin-bottom: 0.3rem;
+    margin-right: 8px;
 }
 
 .descripcion-producto {
     text-align: left;
+    color: #332E2E;
+}
+
+.precio-descuento {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
 }
 
 .descripcion-producto p {
@@ -138,8 +151,10 @@ h3 {
     padding: 0.5rem;
     width: fit-content;
     border-radius: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    margin-top: 12px;
 }
+
 
 .icon-truck i {
     color: green;
