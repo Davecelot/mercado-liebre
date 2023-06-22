@@ -33,6 +33,7 @@ main {
 
 section {
     margin-bottom: 2rem;
+    margin-left: 1rem;
 }
 
 /* Banner */
@@ -92,11 +93,10 @@ p {
     font-size: 0.8rem;
 }
 
-main h2 {
+section h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-align: left;
-    margin-left: 16px;
 }
 
 header p {
@@ -112,8 +112,7 @@ header p {
     padding: 16px;
     border-radius: 4px;
     margin-bottom: 12px;
-    margin-left: 16px;
-    margin-right: 16px;
+    width: 300px;
 }
 
 .producto img {
