@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/forms.css">
     <title>Creá una cuenta en Mercado Liebre</title>
 </head>
 <body>
@@ -45,8 +46,9 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-forms">
         <form action="/" method="get" class="form">
+            <label for="account">Datos de la cuenta</label>
             <input type="text" name="name" placeholder="Nombre y apellido">
             <input type="text" name="user" placeholder="Nombre de usuario">
             <input type="password" name="password" placeholder="Contraseña">
@@ -56,17 +58,48 @@
             <input type="text" name="address" placeholder="Domicilio">
 
             <label for="rol">Perfil del usuario</label>
-            <input type="radio" name="rol" id="rol" value="Comprador">
-            <input type="radio" name="rol" id="rol" value="Vendedor">
+
+            <div class="input-group">
+                <input type="radio" name="rol" id="Comprador" value="Comprador">
+                <label for="Comprador">Comprador</label>
+            </div>
+
+            <div class="input-group">
+                <input type="radio" name="rol" id="Vendedor" value="Vendedor">
+                <label for="Vendedor">Vendedor</label>
+            </div>
 
             <label for="interests">Intereses</label>
-            <input type="checkbox" name="interests" value="Electro">
-            <input type="checkbox" name="interests" value="Moda">
-            <input type="checkbox" name="interests" value="Hogar">
-            <input type="checkbox" name="interests" value="Juguetería">
-            <input type="checkbox" name="interests" value="Vida sana">
 
-            <button type="submit">Enviar</button>
+            <div class="input-group">
+                <input type="checkbox" name="interests" value="Electro">
+                <label for="Electro">Electro</label>
+            </div>
+
+            <div class="input-group">
+                <input type="checkbox" name="interests" value="Moda">
+                <label for="Moda">Moda</label>
+            </div>
+
+            <div class="input-group">
+                <input type="checkbox" name="interests" value="Hogar">
+                <label for="Hogar">Hogar</label>
+            </div>
+
+            <div class="input-group">
+                <input type="checkbox" name="interests" value="Juguetería">
+                <label for="Juguetería">Juguetería</label>
+            </div>
+
+            <div class="input-group">
+                <input type="checkbox" name="interests" value="Vida sana">
+                <label for="Vida sana">Vida sana</label>
+            </div>
+
+            <div class="buttons-form">
+                <button type="submit">Crear cuenta</button>
+                <button type="reset">Reiniciar registro</button>
+            </div>
         </form>
     </main>
 

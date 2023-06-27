@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/forms.css">
     <title>Iniciar Sesión en Mercado Liebre</title>
 </head>
 <body>
@@ -45,12 +46,15 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-forms">
         <form action="/login" method="POST" class="form">
             <label for="login">Inicia sesión en Mercado Liebre</label>
             <input type="text" name="user" placeholder="Nombre de usuario">
             <input type="password" name="password" placeholder="Contraseña">
-            <button type="submit">Enviar</button>
+            <div class="buttons-form">
+                <button type="submit">Iniciar sesión</button>
+                <button type="reset">Registrarse</button>
+            </div>
         </form>
     </main>
 
