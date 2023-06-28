@@ -76,3 +76,14 @@
     .buttons-form button[type="reset"] {
         background-color: #666666;
     }
+
+    .buttons-form button[type="submit"]:hover {
+        background-color: #0022AA;
+    }
+
+    /* LINKS INSIDE BUTTONS */
+
+    .buttons-form button a {
+        text-decoration: none;
+        color: #fff;
+    }

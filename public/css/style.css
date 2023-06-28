@@ -124,14 +124,15 @@ main {
     text-align: center;
 }
 
-    /* SECTION: LAST VIEWED */
+    /* SECTION: INDEX SECTION */
 
-    .last-viewed {
+    .index-section {
         margin-bottom: 20px;
         margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 16px;
     }
 
     /* H3 INSIDE MAIN */
@@ -146,10 +147,11 @@ main {
 
     .product-card {
         background-color: #fff;
-        max-width: 300px;
+        width: 300px;
         margin-bottom: 10px;
         border-radius: 4px;
         position: relative;
+        transition: all 400ms;
     }
 
     .product-card img {
@@ -176,11 +178,12 @@ main {
         position: absolute;
         background-color: #fff;
         right: 8%;
-        bottom: 9%;
+        bottom: 13%;
     }
 
     .truck-icon i {
         color: #39b54a;
+        transition: all 400ms;
     }
 
     /* PRODUCT PRIZE */
@@ -212,7 +215,8 @@ main {
     /* PRODUCT NAME */
 
     #product-name {
-        display: none;
+        opacity: 0;
+        transition: all 400ms;
     }
 
 /* FOOTER */
@@ -221,6 +225,12 @@ main {
     background-color: #fff;
     padding-top: 40px;
     padding-bottom: 16px;
+}
+
+.cards-footer-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
     /* FOOTER CARD */
@@ -250,6 +260,10 @@ main {
         color: #03264C;
         font-size: 2em;
         margin-bottom: 10px;
+    }
+
+    .footer-card:hover i {
+        color: #1259c3;
     }
 
 /* MEDIA QUERIES */
@@ -296,27 +310,9 @@ main {
 
     /* MAIN */
 
-        /* PRODUCT NAME */
+        /* SECTION: INDEX SECTION */
 
-        #product-name {
-            display: block;
-        }
-
-        /* PRODUCT CARD */
-
-        .product-card {
-            box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        }
-
-        /* TRUCK ICON */
-
-        .truck-icon {
-            bottom: 13%;
-        }
-
-        /* SECTION: LAST VIEWED */
-
-        .last-viewed {
+        .index-section {
             margin: 20px 16px;
             display: flex;
             flex-direction: row;
@@ -365,10 +361,32 @@ main {
 
     /* MAIN */
 
-            /* H3 INSIDE MAIN */
+        /* PRODUCT CARD HOVER */
 
-            main h3 {
-                text-align: left;
-            }
+        .product-card:hover {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
 
-    }
+        .product-card:hover #product-name {
+            opacity: 1;
+        }
+
+        .product-card:hover .truck-icon i {
+            transform: rotate(-90deg);
+        }
+
+        /* H3 INSIDE MAIN */
+
+        main h3 {
+            text-align: left;
+        }
+
+    /* FOOTER */
+
+        /*CARDS FOOTER CONTAINER */
+
+        .cards-footer-container {
+            flex-direction: row;
+        }
+
+}
