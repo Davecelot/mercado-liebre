@@ -127,8 +127,7 @@ main {
     /* SECTION: INDEX SECTION */
 
     .index-section {
-        margin-bottom: 20px;
-        margin-top: 20px;
+        margin: 20px 16px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -268,6 +267,16 @@ main {
 
     @media (min-width: 361px) {
 
+    /* MEDIA */
+
+        /* SECTION: INDEX SECTION */
+
+        .index-section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
     /* HEADER */
 
         /* HAMBURGER MENU */
@@ -306,16 +315,7 @@ main {
 
     /* MAIN */
 
-        /* SECTION: INDEX SECTION */
 
-        .index-section {
-            margin: 20px 16px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
 
         }
 
