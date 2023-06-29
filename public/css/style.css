@@ -262,10 +262,6 @@ main {
         margin-bottom: 10px;
     }
 
-    .footer-card:hover i {
-        color: #1259c3;
-    }
-
 /* MEDIA QUERIES */
 
     /* TABLET VIEW */
@@ -387,6 +383,12 @@ main {
 
         .cards-footer-container {
             flex-direction: row;
+        }
+
+        /* FOOTER CARD HOVER */
+
+        .footer-card:hover i {
+            color: #1259c3;
         }
 
 }
