@@ -276,42 +276,6 @@ main {
             flex-direction: row;
         }
 
-    /* HEADER */
-
-        /* HAMBURGER MENU */
-
-        .hamburguer-menu {
-            display: none;
-        }
-
-        /* NAVBAR */
-
-        .navbar {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .navbar ul {
-            display: flex;
-        }
-
-        .navbar li {
-            margin: 0px 8px;
-        }
-
-        /* LEFT NAVBAR */
-
-        .left-navbar {
-            max-width: 340px;
-        }
-
-        /* RIGHT NAVBAR */
-
-        .right-navbar {
-            max-width: 362px;
-        }
-
     /* MAIN */
 
             /* PRODUCT CARD */
