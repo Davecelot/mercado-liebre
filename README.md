@@ -4,6 +4,8 @@
 
 Mercado Liebre is a study project developed for the first part of my Digital House's certification as Full Stack Node Developer, specifically for the HTML and CSS modules.
 
+- Link to the project :point_right: https://davecelot-mercado-liebre.onrender.com/
+
 ## What did I do?
 
 I copied the design from Mercado Libre and some mockups provided for Digital House as part of the tasks to approve the modules about HTML and CSS.
