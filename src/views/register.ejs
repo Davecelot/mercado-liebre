@@ -15,11 +15,12 @@
     <%- include('./partials/header') %>
 
     <main class="main-forms">
-        <form action="/" method="get" class="form">
+        <form action="/register" method="post" class="form">
+            <p role="note">Formulario de demostración: no crea cuentas ni inicia sesiones. No ingreses datos reales.</p>
             <label for="account">Datos de la cuenta</label>
             <input type="text" name="name" placeholder="Nombre y apellido" required>
             <input type="email" name="user" placeholder="Correo electrónico" required>
-            <input type="password" name="password" placeholder="Contraseña" required>
+            <input type="password" name="password" placeholder="Contraseña" disabled>
 
             <label for="birth-date">Fecha de nacimiento</label>
             <input type="date" name="date" id="birth-date" value="dd / mm / yyy" required>
@@ -65,7 +66,7 @@
             </div>
 
             <div class="buttons-form">
-                <button type="submit">Crear cuenta</button>
+                <button type="submit" disabled>Crear cuenta</button>
                 <button type="reset">Reiniciar registro</button>
             </div>
         </form>

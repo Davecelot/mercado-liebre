@@ -1,5 +1,24 @@
 # Case of study: Mercado Liebre
 
+## Run and validate locally
+
+Use Node.js 24.22.1 or a newer patched release in the 24.x line (`.nvmrc` pins
+the verified baseline).
+
+```sh
+npm ci
+npm start
+npm run dev  # Node's built-in file watcher
+npm test
+npm audit --audit-level=low
+```
+
+Login and registration are visual demonstrations only. Their password fields
+and submit buttons are disabled because this project does not authenticate users
+or create accounts. The forms use POST as a fallback so credentials cannot be
+serialized into browser history or server access-log URLs. Do not enter real
+personal information into the demonstration fields.
+
 ## What's Mercado Liebre?
 
 Mercado Liebre is a study project developed for the first part of my Digital House's certification as Full Stack Node Developer, specifically for the HTML and CSS modules.

@@ -15,12 +15,13 @@
     <%- include('./partials/header') %>
 
     <main class="main-forms">
-        <form action="/login" method="get" class="form">
+        <form action="/login" method="post" class="form">
+            <p role="note">Formulario de demostración: no crea cuentas ni inicia sesiones. No ingreses datos reales.</p>
             <label for="login">Inicia sesión en Mercado Liebre</label>
             <input type="text" name="user" placeholder="Nombre de usuario" required>
-            <input type="password" name="password" placeholder="Contraseña" required>
+            <input type="password" name="password" placeholder="Contraseña" disabled>
             <div class="buttons-form">
-                <button type="submit">Iniciar sesión</button>
+                <button type="submit" disabled>Iniciar sesión</button>
                 <button type="reset"><a href="/register">Registrarse</a></button>
             </div>
         </form>
