@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.10",
+    "ejs": "^7.0.2",
     "express": "^4.22.3"
   },
   "engines": {
